@@ -3,14 +3,14 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import DiscoverLayout from "../routes/MainPage";
 import MyMusic from "../routes/MyMusic";
-import Follow from "../routes/FollowPage";
+import Follow from "../routes/FollowPage.jsx";
 import Shop from "../routes/ShopPage";
 import MusicPersonPage from "../routes/MusicPersonPage";
 
 import RecommendPage from "../routes/mainpage/RecommendPage";
 import DlbumPage from "../routes/mainpage/Album.jsx";
 import PlayListPage from "../routes/mainpage/PlayListPage.jsx";
-import DjRadioPage from "../routes/mainpage/Djradio.jsx";
+import DjRadioPage from "../routes/mainpage/DjRadio.jsx";
 import SingerPage from "../routes/mainpage/SingerPage.jsx";
 import TopListPage from "../routes/mainpage/TopListPage.jsx";
 
