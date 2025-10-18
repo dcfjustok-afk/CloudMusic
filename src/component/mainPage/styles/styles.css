@@ -1,19 +1,20 @@
 .album-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 每行 4 个 */
-  gap: 16px; /* 每个专辑间距 */
+  /* gap: 16px; 每个专辑间距 */
   padding-top: 20px;
 }
 .album-item {
   display: flex;
   flex-direction: column;
-
+  height: 234px;
+  width: 182px;
 }
 .album-img {
-  width: 150px;   /* 图片大小可调 */
-  height: 150px;
+  width: 140px;   /* 图片大小可调 */
+  height: 140px;
   object-fit: cover;
-  border-radius: 8px;
+
 }
 .album-title {
   margin-top: 8px;
@@ -29,10 +30,57 @@
 .album-playcount {
   position: absolute;
   bottom: 4px;       /* 距离底部 */
-  right: 11px;        /* 距离右边 */
+  right: 45px;        /* 距离右边 */
   background-color: rgba(0,0,0,0.6); /* 半透明黑底 */
   color: #fff;
   padding: 2px 6px;
   border-radius: 12px;
   font-size: 12px;
+}
+
+.personalized-album-item {
+  display: flex;
+  height: 1;
+}
+
+
+.date-card {
+  width: 150px;         /* 与 PersonalAlbumItem 尺寸一致 */
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.date-card-top {
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  padding: 8px 0;
+  flex: 0 0 20%; /* 占 20% */
+}
+
+.date-card-bottom {
+  background-color: #a5a2a2;
+  flex: 1; /* 占剩余部分 */
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.personalized-album-list {
+  display: flex;
+  flex-wrap: wrap;            /* 允许换行 */
+  justify-content: space-between; /* 让四个元素平均分布 */
+  gap: 20px;                  /* 元素间距 */
+  margin-top: 20px;
+}
+
+.personalized-album-list > * {
+  flex: 0 0 calc(25% - 20px); /* 一行四个，扣掉间距 */
+  box-sizing: border-box;
 }
