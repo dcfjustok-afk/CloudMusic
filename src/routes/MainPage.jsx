@@ -3,11 +3,11 @@ import { Link, Outlet, useLocation } from "react-router-dom";
 
 const secondLabels = [
   { key: "/recommend", label: "推荐" },
-  { key: "/topList", label: "排行榜" },
-  { key: "/playList", label: "歌单" },
-  { key: "/djRadio", label: "主播电台" },
-  { key: "/singer", label: "歌手" },
-  { key: "/album", label: "专辑" },
+  { key: "/recommend/topList", label: "排行榜" },
+  { key: "/recommend/playList", label: "歌单" },
+  { key: "/recommend/djRadio", label: "主播电台" },
+  { key: "/recommend/singer", label: "歌手" },
+  { key: "/recommend/album", label: "专辑" },
 ];
 
 

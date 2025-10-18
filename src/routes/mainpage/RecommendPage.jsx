@@ -8,11 +8,12 @@ import ResidentSinger from "../../component/mainPage/ResidentSinger.jsx";
 import PopularStreamer from "../../component/mainPage/PopularStreamer.jsx";
 import MyInfoMain from "../../component/mainPage/MyInfoMain.jsx";
 import { Flex } from "antd";
+import './styles/Recommend.css';
 
 export default function RecommendPage() {
 
   return (
-    <div>
+    <div className="recommend-page">
       <CarouselMain />
       <div className="recommend-content">
         <Flex horizontal>

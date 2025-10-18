@@ -1,3 +1,10 @@
+import './styles/styles.css';
+import Title from "../Title.jsx";
+import { TITLE_CONFIG } from '../Config/TitleConfig.js';
 export default function NewRerord() {
-  return <h1>这里是新碟上架组件</h1>;
+  return (
+    <div className="new-rerord">
+      <Title configId={TITLE_CONFIG.NEW_ALBUM} />
+    </div>
+  );  
 }

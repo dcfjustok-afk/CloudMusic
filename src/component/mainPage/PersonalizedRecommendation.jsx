@@ -1,3 +1,10 @@
+import './styles/styles.css';
+import Title from "../Title.jsx";
+import { TITLE_CONFIG } from '../Config/TitleConfig.js';
 export default function PersonalizedRecommendation() {
-  return <h1>这里是个性化推荐组件</h1>;
+  return (
+    <div className="personalized-recommendation">
+      <Title configId={TITLE_CONFIG.PERSONALIZED_RECOMMENDATION} />
+    </div>
+  );
 }

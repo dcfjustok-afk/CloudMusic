@@ -1,0 +1,15 @@
+.title-container {
+  display: flex;
+  justify-content: space-between; /* 左右两端对齐 */
+  align-items: center;            /* 垂直居中 */
+  width: 100%;                    /* 或者指定宽度 */
+}
+.title-content {
+  display: flex;
+  align-items: center;
+}
+
+.title-more {
+  display: flex;
+  align-items: center;
+}

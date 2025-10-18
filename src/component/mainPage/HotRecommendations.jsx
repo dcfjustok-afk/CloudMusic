@@ -1,3 +1,10 @@
+import './styles/styles.css';
+import Title from "../Title.jsx";
+import { TITLE_CONFIG } from '../Config/TitleConfig.js';
 export default function HotRecommendations() {
-  return <h1>这里是热门推荐组件</h1>;
+  return (
+    <div className="hot-recommendations">
+      <Title configId={TITLE_CONFIG.HOT_RECOMMEND} />
+    </div>
+  );
 }
