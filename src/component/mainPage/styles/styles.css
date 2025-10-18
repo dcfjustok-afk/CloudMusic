@@ -1,0 +1,38 @@
+.album-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 每行 4 个 */
+  gap: 16px; /* 每个专辑间距 */
+  padding-top: 20px;
+}
+.album-item {
+  display: flex;
+  flex-direction: column;
+
+}
+.album-img {
+  width: 150px;   /* 图片大小可调 */
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.album-title {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+}
+.album-info {
+  display: flex;
+}
+.album-img-wrapper {
+  position: relative; /* 关键：给绝对定位提供参考 */
+}
+.album-playcount {
+  position: absolute;
+  bottom: 4px;       /* 距离底部 */
+  right: 11px;        /* 距离右边 */
+  background-color: rgba(0,0,0,0.6); /* 半透明黑底 */
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-size: 12px;
+}
